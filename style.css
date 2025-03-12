@@ -1,0 +1,527 @@
+
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+
+}
+
+body{
+    background: whitesmoke;
+}
+section{
+    padding: 2rem 9%;
+
+}
+footer.pageFooter{
+    color:rgb(0,0,0);
+    font-size: 1.3em;
+    border-top:1px dotted black;
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 18px;
+    padding-left: 18px;
+    
+    }
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+}
+
+.header .logo{
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-left: 16px;
+
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin:0 1rem;
+    color:black;
+
+}
+
+.header .navbar a:hover{
+    color: #A0A0A0;
+
+}
+.header .navbar ul{
+    list-style: none;
+ }
+ 
+ .header .navbar ul li{
+    float: left;
+    position: relative;
+ }
+ 
+ .header .navbar ul li a{
+    font-size: 2rem;
+    padding:1rem 1.5rem;
+    display: block;
+    color:black;
+    text-transform: capitalize;
+ }
+ 
+ .header .navbar ul li ul{
+    position: absolute;
+    left:0;
+    width: 30rem;
+    background-color: white;
+    animation: .2s linear;
+    display: none;
+ }
+ 
+ .header .navbar ul li ul li{
+    width: 100%;
+ }
+
+ 
+ .header .navbar ul li:hover ul{
+    display: inline-block;
+ }
+
+.header .icons a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background:white;
+    color:black;
+    font-size: 2.5rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.header .icons a:hover{
+    background: white;
+    color:grey;
+}
+
+.header .bx-menu{
+    display: none;
+
+}
+
+.header .search_form{
+    position: absolute;
+    top: 110%; right:-110%;
+    width:50rem;
+    height: 5rem;
+    background:white;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+
+}
+
+.header .search_form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search_form input{
+    height:100%;
+    width:100%;
+    background:none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color:black;
+    padding: 0 1rem;
+}
+
+.header .search_form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color:black;
+    cursor: pointer;
+}
+
+.header .search_form label:hover{
+    color:orange;
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: black;
+}
+.heading span{
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid rgba(0,0,0, .1);
+    color: black;
+    cursor:pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+
+div.login_container .login_form{
+   
+    top:110%; right:2rem;
+    width: 50rem;
+    
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+    border-radius: .5rem;
+    padding: 2rem;
+    margin-top: 20rem;
+    margin-bottom: 15rem;
+    margin-right: 20rem;
+    margin-left: 53rem;
+    background: white;
+    text-align: center;
+}
+
+
+div.login_container .login_form h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: black;
+
+}
+div.login_container .login_form .box{
+    width: 100%;
+    margin: .7rem;
+    background: #E1E1E0;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    align-items: center;
+}
+
+div.login_container .login_form a{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: blue;
+}
+
+.header .showUser{
+    position: absolute;
+    top:110%; right:-110%;
+    width:30rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+    padding:2rem;
+    border-radius: .5rem;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+
+}
+.header .showUser.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/bannerImage.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 23rem;
+    padding-bottom: 13rem;
+}
+
+.home .content{
+    text-align: center;
+    width: 60rem;
+
+}
+
+.home .content h2{
+    color: white;
+    font-size: 3rem;
+}
+.home .content h2 span{
+    color: red;
+}
+.home .content p{
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.btns {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    border: .2rem solid rgba(0,0,0, .1);
+    color: black;
+    cursor:pointer;
+    background: white;
+}
+
+.btns:hover{
+    background: lightgray;
+    color: black;
+}
+
+.about{
+
+    font-size: 2rem;
+    color: black;
+    padding: 1.7rem;
+    line-height: 1.8;
+    
+}
+.about .container{
+    background: white;
+
+}
+div.aboutContainer{
+
+    padding-top: 10rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    font-size: 1.6rem;
+}
+div.aboutContainer h1{
+
+    color: red;
+}
+
+.items .wrapper{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem,1fr));
+    gap: 1.5rem;
+}
+.items .wrapper .box{
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+    outline: .2rem solid rgba(0,0,0, .1);
+    outline-offset: -1rem;
+    text-align: center;
+}
+.items .wrapper .box:hover{
+    outline-offset: 0rem;
+    outline: .2rem solid rgba(0,0,0, .1);
+}
+.items .wrapper .box img{
+    height:21rem;
+    
+
+}
+.items .wrapper .box h3{
+    font-size: 2.5rem;
+    color: black;
+}
+.items .wrapper .box .price{
+    font-size: 1.6rem;
+    color: grey;
+    padding: .5rem 0;
+}
+table{
+    border: 5px solid rgb(0,153,0);
+    margin: 0px;
+    padding: 2px;
+    border-spacing: 4px;
+    width: 640px;
+      margin-bottom: 20rem;
+    }
+  
+    tr:nth-child(odd){
+      background-color: rgb(217,217,217);
+    }
+    
+    tr:nth-child(even){
+      background-color: rgb(191,191,191);
+    }
+    
+  th{
+  background-color: rgb(51,51,153);
+  color: rgb(255,255,255);
+  margin: 0px;
+  padding: 10px;
+  }
+
+div.contact{
+    font-size: 2rem;
+    padding: 1.7rem;
+    line-height: 1.8;
+    margin-top: 11rem;
+    margin-left:50rem;
+    margin-bottom: 10rem;
+}
+
+div.contact h1{
+    color: salmon;
+    
+}
+div.contact .box{
+    width: 30%;
+    margin: .7rem;
+    background: #E1E1E0;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    align-items: center;
+}
+div.contact .textarea{
+    width: 30%;
+    margin: .7rem;
+    background: #E1E1E0;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    align-items: center;
+}
+.cbtn {
+    background-color: rosybrown;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.cbtn:hover{
+    background: white;
+    color: black;
+}
+
+
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+
+    }
+
+    .header{
+        padding: 2rem;
+
+    }
+    section{
+        padding: 2rem;
+    }
+    .about{
+        font-size: 1.7rem;
+        margin-top: 13rem;
+    }
+}
+
+@media (max-width:550px){
+
+    .header .bx-menu{
+        display: inline-block;
+    
+    }
+
+    .header .search_form{
+        width: 90%;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:110%; right:-110%;
+        width:30rem;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+        border-radius: .5rem;
+        background: white;
+    }
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+    .about{
+        font-size: 1.5rem;
+        margin-top: 13rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+    .about{
+        font-size: 1.5rem;
+        margin-top: 13rem;
+    }
+    
+}
+
+
+
+
+
+
+
